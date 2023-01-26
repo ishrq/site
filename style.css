@@ -1,0 +1,111 @@
+/* Variables */
+:root {
+    --white: #F4F3F2;
+    --black: #222222;
+    --grey: #333333;
+    --accent: #008080;
+}
+
+
+/* Reset CSS */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Recursive', monospace;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Site CSS */
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 1.5rem 1.5rem;
+    position: fixed;
+    z-index: 999;
+}
+
+nav > :first-child {
+    margin-right: auto;
+}
+
+#navlogo {
+    width: 140px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+    overflow: scroll;
+}
+
+#home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home div {
+    margin: 7rem;
+}
+
+#home h1 {
+    font-size: 4rem;
+}
+
+#home p {
+    color: var(--grey);
+    font-size: 2rem;
+}
+
+#home a {
+    color: blue;
+    font-style: italic;
+}
+
+/* large screen */
+@media screen and (min-width: 600px) {
+    #home div {
+        text-align: center;
+    }
+}
