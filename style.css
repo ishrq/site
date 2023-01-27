@@ -10,34 +10,42 @@
 /* Reset CSS */
 
 *, *::before, *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
-  margin: 0;
+    margin: 0;
 }
 
 html:focus-within {
-  scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Recursive', monospace;
-  background-color: var(--white);
-  color: var(--black);
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Recursive', monospace;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-snap-align: start;
+    overflow: scroll;
+}
+
+div {
+    overflow: hidden;
 }
 
 img, picture {
-  max-width: 100%;
-  display: block;
-}
-
-input, button, textarea, select {
-  font: inherit;
+    max-width: 100%;
+    display: block;
 }
 
 a {
@@ -66,36 +74,27 @@ nav > :first-child {
 .menu {
     display: inline-block;
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--grey);
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    scroll-snap-align: start;
-    overflow: scroll;
-}
-
 #home {
-    width: 100%;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #home div {
-    margin: 7rem;
+    margin: 1.5rem;
 }
 
 #home h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #home p {
     color: var(--grey);
-    font-size: 2rem;
 }
 
 #home a {
@@ -105,6 +104,9 @@ section{
 
 /* large screen */
 @media screen and (min-width: 600px) {
+    .menu {
+        font-size: 1.5rem;
+    }
     #home div {
         text-align: center;
     }
