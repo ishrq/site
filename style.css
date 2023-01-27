@@ -1,13 +1,9 @@
-/* Variables */
 :root {
     --white: #F4F3F2;
     --black: #222222;
     --grey: #333333;
-    --accent: #008080;
+    --blue: #0000FF;
 }
-
-
-/* Reset CSS */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -52,9 +48,6 @@ a {
     text-decoration: none;
 }
 
-
-/* Site CSS */
-
 nav {
     width: 100%;
     display: flex;
@@ -68,14 +61,19 @@ nav > :first-child {
 }
 
 #navlogo {
-    width: 140px;
+    width: 120px;
 }
 
 .menu {
     display: inline-block;
     margin: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--grey);
+}
+
+.menu:hover {
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 #home {
@@ -98,14 +96,22 @@ nav > :first-child {
 }
 
 #home a {
-    color: blue;
+    color: var(--blue);
     font-style: italic;
+}
+
+#home a:hover {
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 /* large screen */
 @media screen and (min-width: 600px) {
+    #navlogo {
+        width: 160px;
+    }
     .menu {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     #home div {
         text-align: center;
