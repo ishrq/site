@@ -1,8 +1,8 @@
 :root {
-    --white: #F4F3F2;
-    --black: #222222;
-    --grey: #333333;
-    --blue: #0000FF;
+    --white: #DDD;
+    --black: #222;
+    --grey: #333;
+    --blue: #00F;
 }
 
 *, *::before, *::after {
@@ -14,29 +14,15 @@
 }
 
 html:focus-within {
-    scroll-snap-type: both mandatory;
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: 'Recursive', monospace;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Recursive', monospace;
-    background-color: var(--white);
     color: var(--black);
-}
-
-section {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    scroll-snap-align: start;
-    overflow: scroll;
-}
-
-div {
-    overflow: hidden;
+    background-color: var(--white);
 }
 
 img, picture {
@@ -46,14 +32,25 @@ img, picture {
 
 a {
     text-decoration: none;
+    color: var(--black);
+}
+
+section {
+    width: 100%;
+    /* min-height: 100vh; */
+    position: relative;
+}
+
+div {
+    overflow: hidden;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
 }
 
 nav {
     width: 100%;
     display: flex;
-    padding: 1.5rem 1.5rem;
-    position: fixed;
-    z-index: 999;
+    padding: 0.5rem;
 }
 
 nav > :first-child {
@@ -67,53 +64,82 @@ nav > :first-child {
 .menu {
     display: inline-block;
     margin: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--grey);
 }
 
 .menu:hover {
-    color: var(--white);
-    background-color: var(--blue);
-}
-
-#home {
-    font-size: 1.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-decoration: solid underline 3px var(--blue);
 }
 
 #home div {
-    margin: 1.5rem;
-}
-
-#home h1 {
-    font-size: 3rem;
+    margin-top: 4.5rem;
 }
 
 #home p {
-    color: var(--grey);
+    font-size: 1.8rem;
 }
 
-#home a {
-    color: var(--blue);
-    font-style: italic;
+#home .hl {
+    font-size: 2.8rem;
 }
 
-#home a:hover {
+#home .lt {
+    font-size: 1.3rem;
+}
+
+#home:not(.email) a {
+    text-decoration: solid underline 3px var(--blue);
+}
+
+#home:not(.email) a:hover {
     color: var(--white);
+    text-decoration: none;
     background-color: var(--blue);
 }
 
+#home a.email {
+    font-style: italic;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/*
+footer {
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 0.5rem;
+    background-color: var(--grey);
+}
+
+footer > :first-child {
+    margin-right: auto;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.foot {
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: light;
+    color: var(--white);
+}
+*/
+
+
 /* large screen */
 @media screen and (min-width: 600px) {
+
     #navlogo {
         width: 160px;
     }
-    .menu {
-        font-size: 2rem;
-    }
+
     #home div {
-        text-align: center;
+        margin-top: 6.5rem;
     }
+
 }
