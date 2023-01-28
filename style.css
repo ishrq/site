@@ -18,7 +18,7 @@ html:focus-within {
 }
 
 body {
-    font-family: 'Recursive', monospace;
+    font-family: 'Recursive', 'Helvetica Neue', sans-serif;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     color: var(--black);
