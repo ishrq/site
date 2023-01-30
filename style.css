@@ -8,25 +8,43 @@
     box-sizing: border-box;
 }
 
-* {
-    margin: 0;
-}
-
 html:focus-within {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Recursive', 'Helvetica Neue', sans-serif;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    min-height: 100vh;
     color: var(--white);
     background-color: var(--black);
+    font-family: 'Recursive', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
-img, picture {
-    max-width: 100%;
-    display: block;
+body * {
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    margin-left: 0.5rem;
+}
+
+div {
+    overflow: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
 }
 
 a {
@@ -34,18 +52,34 @@ a {
     color: var(--white);
 }
 
-section {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
-div {
-    overflow: hidden;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+input, button, textarea, select, optgroup {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 nav {
@@ -58,7 +92,7 @@ nav > :first-child {
 }
 
 .logo {
-    width: 120px;
+    width: 100%;
 }
 
 .menu {
@@ -112,10 +146,6 @@ nav > :first-child {
     margin-top: 2rem;
 }
 
-.title {
-    font-size: 3rem;
-}
-
 .date {
     font-size: 1rem;
 }
@@ -147,7 +177,6 @@ nav > :first-child {
 footer {
     padding: 0.5rem;
     margin-top: 2rem;
-    margin-left: 1rem;
     font-family: monospace;
     font-size: 1rem;
 }
@@ -164,3 +193,18 @@ footer a {
     }
 
 }
+
+/* animation off */
+@media (prefers-reduced-motion: reduce) {
+
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+         }
+     }
