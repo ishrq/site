@@ -130,31 +130,22 @@ a[target="_blank"]::after {
 }
 
 #home p {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 #home span {
     color: var(--accent);
 }
 
-#home .lt {
-    font-size: 1.2rem;
+#home a {
+  font-family: monospace;
+  font-style: italic;
+  text-decoration: none;
 }
 
-#home:not(.email) a {
-    text-decoration: solid underline 2px var(--accent);
-}
-
-#home:not(.email) a:hover {
-    color: var(--white);
-    text-decoration: none;
-    background-color: var(--accent);
-}
-
-#home a.email {
-    font-style: italic;
-    color: var(--white);
-    text-decoration: none;
+#home a:hover {
+  text-decoration: none;
+  background-color: var(--accent);
 }
 
 #recent {
