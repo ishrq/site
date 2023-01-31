@@ -152,7 +152,8 @@ a[target="_blank"]::after {
     margin-top: 4rem;
 }
 
-#recent article {
+
+/* #recent article {
     margin-top: 2rem;
 }
 
@@ -183,6 +184,7 @@ a[target="_blank"]::after {
     font-weight: bold;
     height: 30px;
 }
+*/
 
 footer {
     padding: 0.5rem;
