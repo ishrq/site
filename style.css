@@ -2,6 +2,7 @@
   --white: #bbb;
   --black: #222;
   --primary: #b2f;
+  --secondary: #e86;
 }
 
 *, *::before, *::after {
@@ -142,7 +143,7 @@ a:not(nav *, footer *):hover {
   content: "NOTE:";
   text-align: start;
   color: var(--black);
-  background: var(--primary);
+  background: var(--secondary);
   display: block;
   max-width: 45%;
   position: relative;
