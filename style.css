@@ -1,126 +1,126 @@
 :root {
-    --white: #bbb;
-    --black: #222;
-    --accent: #b2f;
+  --white: #bbb;
+  --black: #222;
+  --accent: #b2f;
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    color: var(--white);
-    background-color: var(--black);
-    font-family: 'Recursive', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    text-rendering: optimizeSpeed;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  color: var(--white);
+  background-color: var(--black);
+  font-family: 'Recursive', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 body * {
-    margin: 0;
+  margin: 0;
 }
 
 section {
-    width: 100%;
-    position: relative;
-    margin-left: 0.5rem;
+  width: 100%;
+  position: relative;
+  margin-left: 0.5rem;
 }
 
 div {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 article {
-    line-height: 1.15;
+  line-height: 1.15;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 code, kbd, samp {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 a {
-    text-decoration: none;
-    color: var(--white);
+  text-decoration: none;
+  color: var(--white);
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 input, button, textarea, select, optgroup {
-    font: inherit;
+  font: inherit;
 }
 
 img, picture, video, canvas, svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 nav {
-    display: flex;
-    margin-top: 1rem;
+  display: flex;
+  margin-top: 1rem;
 }
 
 nav > :first-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .logo {
-    width: 100%;
+  width: 100%;
 }
 
 .menu {
-    display: inline-block;
-    margin: 0.5rem;
-    font-family: monospace;
-    font-size: 1rem;
+  display: inline-block;
+  margin: 0.5rem;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .menu:hover {
-    text-decoration: solid underline 2px var(--accent);
+  text-decoration: solid underline 2px var(--accent);
 }
 
 a[target="_blank"]::after {
-    content: url(images/link.svg);
-    position: relative;
+  content: url(images/link.svg);
+  position: relative;
 }
 
 .screen-reader-only {
-    position: absolute;
-    width: 1px;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    white-space: nowrap;
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .note {
@@ -128,7 +128,7 @@ a[target="_blank"]::after {
   margin: 1rem;
   font-size: 1.2rem;
   text-align: center;
-  max-width: 70%;
+  max-width: 80%;
   padding: 0rem 0rem 1rem 0rem;
 }
 
@@ -146,15 +146,15 @@ a[target="_blank"]::after {
 }
 
 #home {
-    margin-top: 6rem;
+  margin-top: 6rem;
 }
 
 #home p {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #home span {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 #home a {
@@ -173,75 +173,88 @@ a[target="_blank"]::after {
 }
 
 #recent {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 
-/* #recent article {
-    margin-top: 2rem;
+/*
+#recent article {
+  margin-top: 2rem;
 }
 
 .date {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .tags {
-    font-family: monospace;
-    font-weight: lighter;
-    font-size: 1rem;
-    color: var(--accent);
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: var(--accent);
 }
 
 #recent p {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1.5rem;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.5rem;
 }
 
 .read-button {
-    display: block;
-    margin-top: 1rem;
-    color: var(--black);
-    background-color: var(--accent);
-    border-radius: 8px;
-    border-style: none;
-    font-size: 1rem;
-    font-weight: bold;
-    height: 30px;
+  display: block;
+  margin-top: 1rem;
+  color: var(--black);
+  background-color: var(--accent);
+  border-radius: 8px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 30px;
 }
 */
 
 footer {
-    padding: 0.5rem;
-    margin-top: 2rem;
-    font-family: monospace;
-    font-size: 1rem;
-    line-height: 1.8;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  font-family: monospace;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 footer a {
-    text-decoration: solid underline 1px var(--accent);
+  text-decoration: solid underline 1px var(--accent);
 }
 
 /* large screen */
 @media screen and (min-width: 600px) {
+  .logo {
+    width: 160px;
+  }
 
-    .logo {
-        width: 160px;
-    }
+  .note {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 60%;
+    padding: 0rem 0rem 1rem 0rem;
+  }
 
+  #home h1 {
+    font-size: 3rem;
+  }
+
+  #home p {
+    font-size: 1.5rem;
+  }
 }
 
 /* animation off */
 @media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-         }
-     }
+   *, *::before, *::after {
+     animation-duration: 0.01ms !important;
+     animation-iteration-count: 1 !important;
+     transition-duration: 0.01ms !important;
+     scroll-behavior: auto !important;
+  }
+}
