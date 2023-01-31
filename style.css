@@ -48,8 +48,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 code, kbd, samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
 a {
@@ -165,9 +165,8 @@ a:not(nav *, footer *):hover {
 }
 
 #home a {
-  font-family: monospace;
-  font-style: italic;
-  text-decoration: none;
+  text-decoration: solid underline 3px var(--primary);
+  text-underline-offset: 6px;
 }
 
 #temp {
@@ -222,7 +221,8 @@ footer {
 }
 
 footer a {
-  text-decoration: solid underline 1px var(--primary);
+  text-decoration: solid underline 0.1px var(--white);
+  text-underline-offset: 3px;
 }
 
 /* large screen */
