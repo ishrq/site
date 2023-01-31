@@ -115,6 +115,12 @@ a[target="_blank"]::after {
   position: relative;
 }
 
+a:not(nav *, footer *):hover {
+  text-decoration: none;
+  background-color: var(--accent);
+  color: var(--black);
+}
+
 .screen-reader-only {
   position: absolute;
   width: 1px;
@@ -161,11 +167,6 @@ a[target="_blank"]::after {
   font-family: monospace;
   font-style: italic;
   text-decoration: none;
-}
-
-#home a:hover {
-  text-decoration: none;
-  background-color: var(--accent);
 }
 
 #temp {
