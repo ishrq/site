@@ -1,7 +1,7 @@
 :root {
   --white: #bbb;
   --black: #222;
-  --accent: #b2f;
+  --primary: #b2f;
 }
 
 *, *::before, *::after {
@@ -107,7 +107,7 @@ nav > :first-child {
 }
 
 .menu:hover {
-  text-decoration: solid underline 2px var(--accent);
+  text-decoration: solid underline 2px var(--primary);
 }
 
 a[target="_blank"]::after {
@@ -117,7 +117,7 @@ a[target="_blank"]::after {
 
 a:not(nav *, footer *):hover {
   text-decoration: none;
-  background-color: var(--accent);
+  background-color: var(--primary);
   color: var(--black);
 }
 
@@ -142,7 +142,7 @@ a:not(nav *, footer *):hover {
   content: "NOTE:";
   text-align: start;
   color: var(--black);
-  background: var(--accent);
+  background: var(--primary);
   display: block;
   max-width: 45%;
   position: relative;
@@ -160,7 +160,7 @@ a:not(nav *, footer *):hover {
 }
 
 #home span {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 #home a {
@@ -191,7 +191,7 @@ a:not(nav *, footer *):hover {
   font-family: monospace;
   font-weight: lighter;
   font-size: 1rem;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 #recent p {
@@ -203,7 +203,7 @@ a:not(nav *, footer *):hover {
   display: block;
   margin-top: 1rem;
   color: var(--black);
-  background-color: var(--accent);
+  background-color: var(--primary);
   border-radius: 8px;
   border-style: none;
   font-size: 1rem;
@@ -221,7 +221,7 @@ footer {
 }
 
 footer a {
-  text-decoration: solid underline 1px var(--accent);
+  text-decoration: solid underline 1px var(--primary);
 }
 
 /* large screen */
