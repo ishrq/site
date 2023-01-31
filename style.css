@@ -19,6 +19,8 @@
   --black: #222;
   --primary: #b2f;
   --secondary: #e86;
+  --font-sans: 'RecVar', 'Recursive', sans-serif;
+  --font-mono: 'RecVar', 'Recursive', monospace;
 }
 
 *, *::before, *::after {
@@ -33,7 +35,7 @@ body {
   min-height: 100vh;
   color: var(--white);
   background-color: var(--black);
-  font-family: 'RecVar', 'Recursive', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
@@ -64,8 +66,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 code, kbd, samp {
-  font-family: monospace, monospace;
+  font-family: var(--font-mono);
   font-size: 1em;
+  font-variation-settings: 'MONO' 1;
 }
 
 a {
@@ -75,22 +78,8 @@ a {
 
 h1 {
   font-size: 2em;
+  font-variation-settings: 'wght' 800;
   margin: 0.67em 0;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
 }
 
 input, button, textarea, select, optgroup {
@@ -119,7 +108,7 @@ nav > :first-child {
 .menu {
   display: inline-block;
   margin: 0.5rem;
-  font-family: monospace;
+  font-variation-settings: 'wght' 600;
   font-size: 1rem;
 }
 
@@ -150,6 +139,7 @@ a:not(nav *, footer *):hover {
   border: 3px solid var(--white);
   margin: 1rem;
   font-size: 1.2rem;
+  font-variation-settings: 'wght' 500;
   text-align: center;
   max-width: 80%;
   padding: 0rem 0rem 1rem 0rem;
@@ -158,6 +148,7 @@ a:not(nav *, footer *):hover {
 .note::before {
   content: "NOTE:";
   text-align: start;
+  font-variation-settings: 'wght' 800;
   color: var(--black);
   background: var(--secondary);
   display: block;
@@ -181,6 +172,7 @@ a:not(nav *, footer *):hover {
 }
 
 #home a {
+  font-variation-settings: 'wght' 400, 'slnt' -10;
   text-decoration: solid underline 3px var(--primary);
   text-underline-offset: 6px;
 }
@@ -231,14 +223,16 @@ a:not(nav *, footer *):hover {
 footer {
   padding: 0.5rem;
   margin-top: 2rem;
-  font-family: monospace;
+  font-variation-settings: 'wght' 350;
   font-size: 1rem;
   line-height: 1.8;
 }
 
 footer a {
+  font-variation-settings: 'wght' 300, 'slnt' -10;
   text-decoration: solid underline 0.1px var(--white);
   text-underline-offset: 3px;
+  margin-right: 1rem;
 }
 
 /* large screen */
