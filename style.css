@@ -113,8 +113,6 @@ nav > :first-child {
 a[target="_blank"]::after {
     content: url(images/link.svg);
     position: relative;
-    margin-left: 0.2rem;
-    top: -0.3rem;
 }
 
 .screen-reader-only {
