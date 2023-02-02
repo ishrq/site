@@ -130,13 +130,11 @@ footer {
   padding: 0.5rem;
   margin-top: 2rem;
   font-variation-settings: 'wght' 350;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 footer a {
   font-variation-settings: 'wght' 300, 'slnt' -10;
-  text-decoration: solid underline 0.1px var(--white);
-  text-underline-offset: 3px;
   margin-right: 1rem;
 }
 
@@ -148,9 +146,13 @@ section:not(:first-of-type) {
   margin-top: 4rem;
 }
 
-a[target="_blank"]::after {
+a[target="_blank"]:not(footer *)::after {
   content: url(images/link.svg);
   position: relative;
+}
+
+a[href^="mailto:"]:not(footer *) {
+  font-variation-settings: 'slnt' -10;
 }
 
 a:not(nav *, footer *):hover {
