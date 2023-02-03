@@ -129,18 +129,28 @@ nav > :first-child {
 footer {
   padding: 0.5rem;
   margin-top: 2rem;
-  font-variation-settings: 'wght' 350;
+  position: sticky;
+  font-variation-settings: 'wght' 300;
   line-height: 1.5;
+  text-align: center;
+}
+
+footer .divider {
+  background-color: var(--white);
+  height: 1px;
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer p {
+  font-size: 1rem;
 }
 
 footer a {
-  font-variation-settings: 'wght' 300;
+  font-variation-settings: 'wght' 450;
   margin-right: 1rem;
-}
-
-footer .lt {
-  font-variation-settings: 'wght' 300;
-  font-size: 0.8rem;
 }
 
 section:first-of-type {
@@ -151,12 +161,12 @@ section:not(:first-of-type) {
   margin-top: 4rem;
 }
 
-a[target="_blank"]:not(footer *)::after {
+a[target="_blank"]::after {
   content: url(images/link.svg);
   position: relative;
 }
 
-a[href^="mailto:"]:not(footer *) {
+a[href^="mailto:"] {
   font-variation-settings: 'slnt' -10;
 }
 
