@@ -227,6 +227,7 @@ a:not(nav *, footer *):hover {
 
 #home img {
   margin-bottom: 1rem;
+  width: 60%;
 }
 
 #about .lt {
@@ -268,6 +269,10 @@ a:not(nav *, footer *):hover {
 
   .menu {
     font-size: 1.2rem;
+  }
+
+  #home img {
+    width: 400px;
   }
 
   @keyframes scale {
