@@ -118,7 +118,7 @@ nav > :first-child {
 .menu {
   display: inline-block;
   margin: 0.5rem;
-  font-variation-settings: 'wght' 600;
+  font-variation-settings: 'wght' 300;
   font-size: 1rem;
 }
 
@@ -137,8 +137,9 @@ footer {
 
 footer .divider {
   background-color: var(--white);
-  height: 1px;
+  height: 0.5px;
   width: 40%;
+  opacity: 90%;
   margin-top: 2rem;
   margin-bottom: 1rem;
   margin-right: auto;
