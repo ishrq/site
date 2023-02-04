@@ -225,15 +225,15 @@ a:not(nav *, footer *):hover {
   text-align: center;
 }
 
+#home img {
+  margin-bottom: 1rem;
+  width: 60%;
+}
+
 #home a {
   font-variation-settings: 'wght' 400, 'slnt' -10;
   text-decoration: solid underline 3px var(--primary);
   text-underline-offset: 6px;
-}
-
-#home img {
-  margin-bottom: 1rem;
-  width: 60%;
 }
 
 #about .lt {
