@@ -184,6 +184,10 @@ a.underline {
   color: var(--primary);
 }
 
+.lt {
+  font-size: 0.9rem;
+}
+
 #home-logo {
   margin: 6rem auto 5rem auto;
 }
