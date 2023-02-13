@@ -56,11 +56,6 @@ code, kbd, samp {
   font-size: 1em;
 }
 
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -123,6 +118,11 @@ section:not(:first-of-type) {
   margin-top: 4rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 a[target="_blank"]::after {
   content: url(images/link.svg);
   position: relative;
@@ -137,16 +137,14 @@ a:not(nav *, footer *) {
   text-decoration: solid underline 1px var(--white);
 }
 
-a:not(nav *, footer *):hover, .menu:hover {
-  text-decoration: none;
-  background-color: var(--primary);
-  color: var(--black);
-}
-
 a.underline {
   font-style: italic;
   text-decoration: var(--primary-underline);
   text-underline-offset: 6px;
+}
+
+a.no-underline {
+  text-decoration: none;
 }
 
 .screen-reader-only {
@@ -190,6 +188,42 @@ a.underline {
 
 #home-logo {
   margin: 6rem auto 5rem auto;
+}
+
+.date {
+  font-style: italic;
+  color: var(--primary);
+}
+
+.date::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.title {
+  font-size: 1.6rem;
+}
+
+.title::after {
+  content: "\A";
+  white-space: pre;
+}
+
+.tag {
+  font-size: 1rem;
+  word-spacing: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.tag::before {
+  content: "[ ";
+  color: var(--primary);
+}
+
+.tag::after {
+  content: " ]\A\A";
+  color: var(--primary);
+  white-space: pre;
 }
 
 /* large screen */
