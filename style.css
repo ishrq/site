@@ -129,7 +129,7 @@ a[target="_blank"]::after {
 }
 
 a[target="_blank"]::before {
-  content: "The following link opens in a new tab.";
+  content: "The following link opens in new tab";
   position: absolute;
   width: 1px;
   clip: rect(0 0 0 0);
@@ -139,8 +139,6 @@ a[target="_blank"]::before {
 
 a[href^="mailto:"] {
   font-style: italic;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
 }
 
 a[href^="mailto:"]::before {
@@ -154,6 +152,7 @@ a[href^="mailto:"]::before {
 
 a:not(nav *, footer *) {
   text-decoration: solid underline 1px var(--white);
+  text-underline-offset: 4px;
 }
 
 a.underline {
