@@ -128,9 +128,27 @@ a[target="_blank"]::after {
   position: relative;
 }
 
+a[target="_blank"]::before {
+  content: "The following link opens in a new tab.";
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 a[href^="mailto:"] {
   font-style: italic;
   text-decoration: none;
+}
+
+a[href^="mailto:"]::before {
+  content: "The following email opens in default application";
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 a:not(nav *, footer *) {
@@ -145,14 +163,6 @@ a.underline {
 
 a.no-underline {
   text-decoration: none;
-}
-
-.screen-reader-only {
-  position: absolute;
-  width: 1px;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .note {
