@@ -139,6 +139,7 @@ a[target="_blank"]::before {
 
 a[href^="mailto:"] {
   font-style: italic;
+  letter-spacing: 0.1rem;
   text-decoration: none;
 }
 
