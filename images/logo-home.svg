@@ -29,13 +29,13 @@
      inkscape:showpageshadow="false"
      inkscape:zoom="2.35518"
      inkscape:cx="111.88105"
-     inkscape:cy="134.38463"
+     inkscape:cy="149.67009"
      inkscape:window-width="1920"
      inkscape:window-height="1048"
      inkscape:window-x="0"
      inkscape:window-y="32"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g98844" />
+     inkscape:current-layer="g1036" />
   <defs
      id="defs2">
     <linearGradient
@@ -103,7 +103,7 @@
          ry="1.4010551" />
       <g
          id="g4842"
-         transform="matrix(0.93714333,-0.14671931,0.17586069,0.93165098,-23.894231,-10.870536)"
+         transform="matrix(0.88852662,-0.13910787,0.16673747,0.8833192,-20.513928,-8.5956743)"
          inkscape:label="Monitor">
         <g
            id="g3294"
@@ -158,7 +158,7 @@
         <g
            id="g98844"
            inkscape:label="front"
-           style="stroke:#4a4a4a;stroke-opacity:1">
+           style="display:inline;stroke:#4a4a4a;stroke-opacity:1">
           <rect
              style="opacity:1;fill:none;stroke:#8a8a8a;stroke-width:0.19847;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
              id="rect848"
@@ -182,7 +182,7 @@
              transform="matrix(0.99351582,0.11369397,-0.01008697,0.99994913,0,0)"
              inkscape:label="inner outline" />
           <rect
-             style="opacity:0.479744;mix-blend-mode:screen;fill:url(#linearGradient1745);fill-opacity:1;stroke:#4a4a4a;stroke-width:0.255419;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+             style="display:none;opacity:0.479744;mix-blend-mode:screen;fill:url(#linearGradient1745);fill-opacity:1;stroke:#4a4a4a;stroke-width:0.255419;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
              id="rect2327"
              width="50.504852"
              height="49.618286"
@@ -197,7 +197,7 @@
       <g
          id="g1017"
          inkscape:label="Logo"
-         transform="matrix(1.0118622,0,0,1.0118622,1.0224108,-0.65920883)"
+         transform="matrix(1.0118622,0,0,1.0118622,1.0224108,-2.0424593)"
          style="opacity:1">
         <text
            xml:space="preserve"
