@@ -200,13 +200,18 @@ a.no-underline {
   margin: 6rem auto 5rem auto;
 }
 
-.date {
-  font-style: italic;
+.post-list {
+  margin-bottom: 2rem;
+}
+
+.date::before {
+  content: "[ ";
   color: var(--primary);
 }
 
 .date::after {
-  content: "\A";
+  content: " ]\A";
+  color: var(--primary);
   white-space: pre;
 }
 
@@ -221,18 +226,16 @@ a.no-underline {
 
 .tag {
   font-size: 1rem;
-  word-spacing: 0.7rem;
-  letter-spacing: 0.05rem;
+  font-weight: bold;
+  color: var(--black);
+  background-color: var(--primary);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
 }
 
-.tag::before {
-  content: "[ ";
-  color: var(--primary);
-}
-
-.tag::after {
-  content: " ]\A\A";
-  color: var(--primary);
+.title::after {
+  content: "\A";
   white-space: pre;
 }
 
