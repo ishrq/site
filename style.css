@@ -99,15 +99,16 @@ nav.content {
 footer {
   font-size: 1rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
-footer .divider {
+.divider {
   background-color: var(--white);
-  height: 0.5px;
+  height: 1px;
   width: 40%;
   opacity: 90%;
-  margin: auto auto 1rem auto;
+  margin: 1rem auto 1rem auto;
 }
 
 section:first-of-type {
