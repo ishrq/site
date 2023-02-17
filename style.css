@@ -156,29 +156,6 @@ a[href^="mailto:"]::before {
   text-decoration: none;
 }
 
-.note {
-  border: 3px solid var(--white);
-  margin: 1rem;
-  font-size: 1.2rem;
-  text-align: center;
-  max-width: 80%;
-  padding: 0rem 0rem 1rem 0rem;
-}
-
-.note::before {
-  content: "NOTE:";
-  font-weight: bold;
-  text-align: start;
-  color: var(--black);
-  background: var(--secondary);
-  display: block;
-  max-width: 45%;
-  position: relative;
-  left: -1rem;
-  top: -1rem;
-  padding: 0.2rem 1rem;
-}
-
 .hl {
   color: var(--primary);
 }
