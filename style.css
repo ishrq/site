@@ -79,6 +79,7 @@ img, picture, video, canvas, svg {
 nav:not(.content) {
   display: flex;
   margin-top: 1rem;
+  margin-bottom: 6rem;
 }
 
 nav:not(.content) > :first-child {
@@ -109,10 +110,6 @@ footer {
   width: 40%;
   opacity: 90%;
   margin: 1rem auto 1rem auto;
-}
-
-section:first-of-type {
-  margin-top: 5rem;
 }
 
 section:not(:first-of-type) {
