@@ -6,7 +6,7 @@
   --secondary: #e86;
   --font-sans: Helvetica, sans-serif, system-ui;
   --font-mono: monospace;
-  --primary-underline: solid underline 3px var(--primary);
+  --decoration: underline var(--secondary) solid 0.1ex;
 }
 
 *, *::before, *::after {
@@ -120,7 +120,8 @@ section:not(:first-of-type) {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: var(--decoration);
+  text-underline-offset: 3px;
   color: var(--white);
 }
 
@@ -151,18 +152,7 @@ a[href^="mailto:"]::before {
   white-space: nowrap;
 }
 
-a:not(nav *, footer *) {
-  text-decoration: solid underline 1px var(--white);
-  text-underline-offset: 4px;
-}
-
-a.underline {
-  font-style: italic;
-  text-decoration: var(--primary-underline);
-  text-underline-offset: 6px;
-}
-
-a.no-underline {
+.no-underline {
   text-decoration: none;
 }
 
