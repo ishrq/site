@@ -217,10 +217,6 @@ a[href^="mailto:"]::before {
     width: 300px;
   }
 
-  #home-logo:hover {
-    animation: scale 5s ease-in-out infinite;
-  }
-
 }
 
 /* animation off */
