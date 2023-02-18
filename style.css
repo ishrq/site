@@ -161,7 +161,7 @@ a[href^="mailto:"]::before {
   font-size: 0.9rem;
 }
 
-#home-logo {
+.img-home {
   margin: 6rem auto 5rem auto;
 }
 
@@ -213,7 +213,7 @@ a[href^="mailto:"]::before {
     100% {transform: scale(1);}
   }
 
-  #home-logo {
+  .img-home {
     width: 300px;
   }
 
