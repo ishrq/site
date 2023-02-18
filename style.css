@@ -86,7 +86,7 @@ nav:not(.as-content) > :first-child {
   margin-right: auto;
 }
 
-nav.as-content {
+.as-content {
   text-align: center;
   font-size: 2rem;
 }
