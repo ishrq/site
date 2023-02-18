@@ -4,8 +4,8 @@
   --black: #222;
   --primary: #b2f;
   --secondary: #e86;
-  --font-sans: Helvetica, sans-serif, system-ui;
-  --font-mono: monospace;
+  --font-sans: 20px/1.6 Helvetica, sans-serif, system-ui;
+  --font-mono: 16px/1.6 monospace;
   --decoration: underline var(--secondary) solid 0.1ex;
 }
 
@@ -21,9 +21,7 @@ body {
   min-height: 100vh;
   color: var(--white);
   background-color: var(--black);
-  font-family: var(--font-sans);
-  font-size: 20px;
-  line-height: 1.5;
+  font: var(--font-sans);
   text-rendering: optimizeSpeed;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -52,8 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 code, kbd, samp {
-  font-family: var(--font-mono);
-  font-size: 1em;
+  font: var(--font-mono);
 }
 
 h1 {
