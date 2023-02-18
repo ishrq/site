@@ -162,7 +162,8 @@ a[href^="mailto:"]::before {
 }
 
 .img-home {
-  margin: 6rem auto 5rem auto;
+  margin: 5rem auto 4rem auto;
+  width: min(280px,100%);
 }
 
 .post-list {
@@ -211,10 +212,6 @@ a[href^="mailto:"]::before {
     0% {transform: scale(1);}
     40% {transform: scale(1.05);}
     100% {transform: scale(1);}
-  }
-
-  .img-home {
-    width: 300px;
   }
 
 }
