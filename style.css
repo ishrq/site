@@ -76,17 +76,17 @@ img, picture, video, canvas, svg {
   display: block;
 }
 
-nav:not(.content) {
+nav:not(.as-content) {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 6rem;
 }
 
-nav:not(.content) > :first-child {
+nav:not(.as-content) > :first-child {
   margin-right: auto;
 }
 
-nav.content {
+nav.as-content {
   text-align: center;
   font-size: 2rem;
 }
@@ -123,12 +123,12 @@ a {
 }
 
 a[target="_blank"]::after {
-  content: url(images/link.svg);
+  as-content: url(images/link.svg);
   position: relative;
 }
 
 a[target="_blank"]::before {
-  content: "The following link opens in new tab";
+  as-content: "The following link opens in new tab";
   position: absolute;
   width: 1px;
   clip: rect(0 0 0 0);
@@ -141,7 +141,7 @@ a[href^="mailto:"] {
 }
 
 a[href^="mailto:"]::before {
-  content: "The following email opens in default application";
+  as-content: "The following email opens in default application";
   position: absolute;
   width: 1px;
   clip: rect(0 0 0 0);
@@ -170,12 +170,12 @@ a[href^="mailto:"]::before {
 }
 
 .date::before {
-  content: "[ ";
+  as-content: "[ ";
   color: var(--primary);
 }
 
 .date::after {
-  content: " ]\A";
+  as-content: " ]\A";
   color: var(--primary);
   white-space: pre;
 }
