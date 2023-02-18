@@ -123,12 +123,12 @@ a {
 }
 
 a[target="_blank"]::after {
-  as-content: url(images/link.svg);
+  content: url(images/link.svg);
   position: relative;
 }
 
 a[target="_blank"]::before {
-  as-content: "The following link opens in new tab";
+  content: "The following link opens in new tab";
   position: absolute;
   width: 1px;
   clip: rect(0 0 0 0);
@@ -170,12 +170,12 @@ a[href^="mailto:"]::before {
 }
 
 .date::before {
-  as-content: "[ ";
+  content: "[ ";
   color: var(--primary);
 }
 
 .date::after {
-  as-content: " ]\A";
+  content: " ]\A";
   color: var(--primary);
   white-space: pre;
 }
