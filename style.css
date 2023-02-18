@@ -141,7 +141,7 @@ a[href^="mailto:"] {
 }
 
 a[href^="mailto:"]::before {
-  as-content: "The following email opens in default application";
+  content: "The following email opens in default application";
   position: absolute;
   width: 1px;
   clip: rect(0 0 0 0);
