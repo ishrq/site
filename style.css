@@ -1,4 +1,5 @@
 /* Variables */
+
 :root {
   --white: #bbb;
   --black: #222;
@@ -8,6 +9,8 @@
   --font-mono: 16px/1.6 monospace;
   --decoration: underline var(--secondary) solid 0.1ex;
 }
+
+/* Reset */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -85,6 +88,8 @@ svg {
   display: block;
 }
 
+/* Navbar */
+
 nav:not(.as-content) {
   display: flex;
   margin-top: 1rem;
@@ -105,6 +110,8 @@ nav:not(.as-content) > :first-child {
   margin: 0.5rem;
 }
 
+/* Footer */
+
 footer {
   font-size: 1rem;
   text-align: center;
@@ -120,9 +127,7 @@ footer {
   margin: 1rem auto 1rem auto;
 }
 
-section:not(:first-of-type) {
-  margin-top: 4rem;
-}
+/* Anchors */
 
 a {
   text-decoration: var(--decoration);
@@ -159,6 +164,12 @@ a[href^="mailto:"]::before {
 
 .no-underline {
   text-decoration: none;
+}
+
+/* Body */
+
+section:not(:first-of-type) {
+  margin-top: 4rem;
 }
 
 .hl {
@@ -214,18 +225,13 @@ a[href^="mailto:"]::before {
 }
 
 /* large screen */
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
 
-  @keyframes scale {
-    0% {transform: scale(1);}
-    40% {transform: scale(1.05);}
-    100% {transform: scale(1);}
-  }
-
-}
+} */
 
 /* animation off */
 @media (prefers-reduced-motion: reduce) {
+
   html:focus-within {
     scroll-behavior: auto;
   }
@@ -236,4 +242,5 @@ a[href^="mailto:"]::before {
      transition-duration: 0.01ms !important;
      scroll-behavior: auto !important;
   }
+
 }
