@@ -41,11 +41,19 @@ div {
   overflow: hidden;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font: var(--font-mono);
 }
 
@@ -59,11 +67,19 @@ h2 {
   margin: 0.67em 0;
 }
 
-input, button, textarea, select, optgroup {
+input,
+button,
+textarea,
+select,
+optgroup {
   font: inherit;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   max-width: 100%;
   height: auto;
   display: block;
